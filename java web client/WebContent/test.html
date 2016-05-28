@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<script language="javascript">
+function fillme()
+{
+ var w = document.form1.words.value;
+ document.form1.content.value = w;
+}
+</script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+ <label>
+ <input name="words" type="text" size="40" />
+ </label>
+ <p>
+ <label>
+ <textarea name="content" cols="40" rows="4"></textarea>
+ </label>
+ </p>
+ <p>
+ <label>
+ <input type="button" name="Submit" value="按钮" onclick="fillme()"/>
+ </label>
+ </p>
+</form>
+</body>
+</html>
